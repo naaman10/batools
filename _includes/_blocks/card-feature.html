@@ -1,0 +1,25 @@
+<section class="container-fuild px-4 py-5 background-{% case section.background %}{% when "Light" %}light{% when "Dark" %}dark text-white{% endcase %}">
+    <div class="featureIntro px-5 text-{% case section.intro.alignment %}{% when "Left" %}start{% when "Centre" %}center{% when "Right" %}end{% endcase %}">
+    {% if section.intro.title %}<h2>{{ section.intro.title }}</h2>{% endif %}
+    {% if section.intro.intro_text %}{{ section.intro.intro_text | markdownify }}{% endif %}
+    </div>
+    {% assign size =  section.cards | size %}
+    <div class="row g-4 p-5 row-cols-1 row-cols-lg-{{ size }}">
+        {% for card in section.cards %}
+      <div class="feature col">
+          {% if card.image %}
+        <div class="featureMedia">
+            <img class="img-fluid" src="{{ card.image }}">
+        </div>
+        {% endif %}
+        <h2>{{ card.title }}</h2>
+        <p>{{ card.text }}</p>
+        {% if card.cta %}
+        <div class="featureCTA">
+            <a href="{{ card.cta.url }}" class="btn btn-{% case card.cta.type %}{% when "Primary Solid" %}primary{% when "Secondary Solid" %}secondary{% when "Primary Outline" %}outline-primary{% when "Secondary Outline" %}outline-secondary{% endcase %}" {% if card.cta.new_tab %}target="_blank"{% endif %}>{{ card.cta.cta_label }}</a>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,48 @@
+---
+---
+
+$white: #fffff;
+$black: #000000;
+$blue: #3459e6;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #da292e;
+$orange:#f8765f;
+$yellow: #f4bd61;
+$green: #2fb380;
+$teal: #20c997;
+$cyan: #287bb5;
+
+$primary: $blue;
+$secondary: $white;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $white;
+$dark: $black;
+
+.background-dark {
+    background-color: $dark!important;
+    color: $light;
+}
+
+section.banner {
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.background-light {
+    background-color: $light!important;
+    color: $dark;
+}
+
+.background-primary {
+    background-color: $primary!important;
+}
+.background-secondary {
+    background-color: $secondary!important;
+}
