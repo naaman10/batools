@@ -4,8 +4,7 @@ title: This is the homepage
 page_blocks:
 - template: content-feature
   title: Welcome to BA Tools
-  body_text: |-
-    The UK's best Digital Consulatant contractors.
+  body_text: The UK's best Digital Consulatant contractors.
   alignment: Left
   cta:
     cta_label: Find out more
@@ -32,7 +31,12 @@ page_blocks:
   background: Light
   intro:
     title: This is a title
-    intro_text: Welcome to our digital consultancy! We are a team of experts who specialize in leveraging the latest technologies to help businesses succeed in the digital age. Whether you're looking to improve your online presence, streamline your operations, or gain insights from data, we have the skills and experience to help you achieve your goals. Let us help you stay ahead of the competition and thrive in the digital world. Contact us today to learn more!
+    intro_text: Welcome to our digital consultancy! We are a team of experts who specialize
+      in leveraging the latest technologies to help businesses succeed in the digital
+      age. Whether you're looking to improve your online presence, streamline your
+      operations, or gain insights from data, we have the skills and experience to
+      help you achieve your goals. Let us help you stay ahead of the competition and
+      thrive in the digital world. Contact us today to learn more!
     alignment: Centre
   cards:
   - image: "/uploads/150.png"
@@ -120,5 +124,6 @@ page_blocks:
       type: Primary Solid
       new_tab: false
   background: Dark
+published: false
 
 ---
