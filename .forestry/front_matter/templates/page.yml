@@ -20,6 +20,7 @@ fields:
   - embed
   - image-carousel
   - banner
+  - banner-image
   - pricing
   config:
     min: 
