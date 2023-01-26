@@ -15,7 +15,11 @@ page_blocks:
   full_width: true
   background_colour: Dark
   align: Center
-  images: []
+  images:
+  - image: "/uploads/kisspng-very-united-kingdom-company-retail-customer-servic-typographic-design-5af1915f8fb799-0650939415257808315887.jpg"
+    alt_text: Very Group
+  - image: "/uploads/dluhc-logo-1.png"
+    alt_text: Department for Levelling Up, Housing & Communities
   background_image: false
   background_image_yes: ''
 - template: banner
