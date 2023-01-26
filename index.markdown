@@ -11,6 +11,13 @@ page_blocks:
     url: https://www.bbc.co.uk
     type: Primary Outline
     new_tab: true
+- template: banner-image
+  full_width: true
+  background_colour: Dark
+  align: Center
+  images: []
+  background_image: false
+  background_image_yes: ''
 - template: banner
   banner_content:
     cta:
@@ -124,6 +131,5 @@ page_blocks:
       type: Primary Solid
       new_tab: false
   background: Dark
-published: false
 
 ---
