@@ -2,16 +2,16 @@
     <div class="row">       
         <div class="col-12 col-md-6 d-flex justify-content-center {% case section.alignment %}{% when "Left" %}order-first{% when "Right" %}order-last{% endcase %}">
             <div class="featureMedia">
-                <img class="img-fluid" src="https://via.placeholder.com/400x400.png?text=Naaman+Template">
+                <img class="img-fluid" src="{{ site.github.url }}/uploads/home-banner-tech.png">
             </div>
         </div>
         <div class="col-12 col-md-6 d-flex">
             <div class="featureText align-self-center">
-                {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
-                {% if section.body_text %}{{ section.body_text | markdownify }}{% endif %}
+                {% if section.title %}<h6 class="text-uppercase text-muted">{{ section.title }}</h6>{% endif %}
+                {% if section.body_text %}<h2 class="lh-sm">{{ section.body_text | markdownify }}</h2>{% endif %}
                 {{ if section.cta }}
                 <div class="featureCTA">
-                    <a href="{{ section.cta.url }}" class="btn btn-{% case section.cta.type %}{% when "Primary Solid" %}primary{% when "Secondary Solid" %}secondary{% when "Primary Outline" %}outline-primary{% when "Secondary Outline" %}outline-secondary{% endcase %}" {% if section.cta.new_tab %}target="_blank"{% endif %}>{{ section.cta.cta_label }}</a>
+                    <a href="{{ section.cta.url }}" class="btn btn-{% case section.cta.type %}{% when "Primary Solid" %}primary{% when "Secondary Solid" %}secondary{% when "Primary Outline" %}outline-primary{% when "Secondary Outline" %}outline-secondary{% endcase %} rounded-pill me-sm-3" {% if section.cta.new_tab %}target="_blank"{% endif %}>{{ section.cta.cta_label }}</a>
                 </div>
                 {{ endif }}
             </div>

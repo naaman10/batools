@@ -1,0 +1,12 @@
+<section class="container{% case section.full_width %}{% when true %}-fluid{% endcase %} banner px-3 d-flex align-items-center justify-content-{% case section.align %}{% when "Left" %}start{% when "Center" %}center{% when "Right" %}end{% endcase %} {% case section.align %}{% endcase %} background-{% case section.background_colour %}{% when "Dark" %}dark{% when "Light" %}light{% when "Primary" %}primary{% when "Secondary" %}secondary{% endcase %} my-3" {% if section.background_image == true %}style="background-image:url('{{ section.background_image_yes }}')"{% endif %} >
+    <div class="row">
+        <div class="col">
+            <div class="bannerContent">
+                {% if section.images %}
+                    {% for image in section.images %}  
+                    <div class="col-md-3"><img src="{{site.github.url}}/{{image.image}}" alt="{{image.alt_text}}" class="img-fluid"></div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

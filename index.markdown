@@ -5,12 +5,10 @@ page_blocks:
 - template: content-feature
   title: Welcome to BA Tools
   body_text: |-
-    BA Tools is a free online resource for Business Analysts.
-
-    Here you will find a collection of useful frameworks, templates and guides specially curated to make your life as a BA easier.
+    The UK's best Digital Consulatant contractors.
   alignment: Left
   cta:
-    cta_label: Button Label
+    cta_label: Find out more
     url: https://www.bbc.co.uk
     type: Primary Outline
     new_tab: true
@@ -34,12 +32,7 @@ page_blocks:
   background: Light
   intro:
     title: This is a title
-    intro_text: Lorem ipsum dolor sit amet convallis fames efficitur lorem. Nulla
-      netus euismod pellentesque dis justo. Maecenas rhoncus accumsan vulputate lacus
-      et finibus turpis justo elit. Litora lacinia erat blandit porttitor class. A
-      mollis dignissim penatibus tortor fringilla. Sem vel lorem elementum congue
-      montes nostra mollis ligula nam at. Nisl potenti viverra purus sollicitudin
-      aptent id porta pretium adipiscing fusce.
+    intro_text: Welcome to our digital consultancy! We are a team of experts who specialize in leveraging the latest technologies to help businesses succeed in the digital age. Whether you're looking to improve your online presence, streamline your operations, or gain insights from data, we have the skills and experience to help you achieve your goals. Let us help you stay ahead of the competition and thrive in the digital world. Contact us today to learn more!
     alignment: Centre
   cards:
   - image: "/uploads/150.png"
